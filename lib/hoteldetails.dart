@@ -12,7 +12,7 @@ class HotelDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
+      body: Column(
         children: [
           Stack(
             children: [
@@ -150,61 +150,62 @@ class HotelDetails extends StatelessWidget {
                       ))),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: ListView(
-              physics: NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              children: const [
-                Padding(
-                  padding: EdgeInsets.only(top:10,bottom: 10),
-                  child: Text(
-                    "Ramada Plaza Palm Grove",
-                    style: TextStyle(
-                      fontSize: 20,
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(10),
+              child: ListView(
+                shrinkWrap: true,
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.only(top:10,bottom: 10),
+                    child: Text(
+                      "Ramada Plaza Palm Grove",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
                     ),
                   ),
-                ),
-                Text(
-                  "Choose our Ramada Resort Kochi hotel near Kochi City Center for numerous amenities "
-                  "and comfortable accommodations in a convenient location. Our Cochin location is 45 "
-                  "minutes from Cochin International Airport (COK), and our comfortable, convenient "
-                  "amenities make our hotel the perfect choice for business and leisure travelers alike.\n"
-                  "Work out in our fitness center, swim in our pool, and unwind in our hot tub, whirlpool, "
-                  "sauna, or steam room. Use high-speed Internet in your room or WiFi in public areas. "
-                  "Enjoy continental breakfast and a free newspaper, and use our meeting space. Non-smoking "
-                  "and accessible rooms are available, and we offer guest laundry, valet, and dry cleaning.",
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(fontSize: 14),
-                ),
-                Text(
-                  "Visit the breathtaking 80-foot-high Athirapally Waterfalls, and then spend the afternoon "
-                  "on popular Cherai Beach with its golden sands and shallow waters. Check out the "
-                  "mythological murals in the portrait gallery of Mattancherry Palace, more familiarly "
-                  "known as the Dutch Palace, and watch rescued elephants being bathed, fed, and trained, "
-                  "or go on an elephant safari at Kodanad Elephant Training Centre.",
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(fontSize: 14),
-                ),
-                Text(
-                  "Visit the breathtaking 80-foot-high Athirapally Waterfalls, and then spend the afternoon "
-                  "on popular Cherai Beach with its golden sands and shallow waters. Check out the "
-                  "mythological murals in the portrait gallery of Mattancherry Palace, more familiarly "
-                  "known as the Dutch Palace, and watch rescued elephants being bathed, fed, and trained, "
-                  "or go on an elephant safari at Kodanad Elephant Training Centre.",
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(fontSize: 14),
-                ),
-                Text(
-                  "Visit the breathtaking 80-foot-high Athirapally Waterfalls, and then spend the afternoon "
-                      "on popular Cherai Beach with its golden sands and shallow waters. Check out the "
-                      "mythological murals in the portrait gallery of Mattancherry Palace, more familiarly "
-                      "known as the Dutch Palace, and watch rescued elephants being bathed, fed, and trained, "
-                      "or go on an elephant safari at Kodanad Elephant Training Centre.",
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(fontSize: 14),
-                ),
-              ],
+                  Text(
+                    "Choose our Ramada Resort Kochi hotel near Kochi City Center for numerous amenities "
+                    "and comfortable accommodations in a convenient location. Our Cochin location is 45 "
+                    "minutes from Cochin International Airport (COK), and our comfortable, convenient "
+                    "amenities make our hotel the perfect choice for business and leisure travelers alike.\n"
+                    "Work out in our fitness center, swim in our pool, and unwind in our hot tub, whirlpool, "
+                    "sauna, or steam room. Use high-speed Internet in your room or WiFi in public areas. "
+                    "Enjoy continental breakfast and a free newspaper, and use our meeting space. Non-smoking "
+                    "and accessible rooms are available, and we offer guest laundry, valet, and dry cleaning.",
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(fontSize: 14),
+                  ),
+                  Text(
+                    "Visit the breathtaking 80-foot-high Athirapally Waterfalls, and then spend the afternoon "
+                    "on popular Cherai Beach with its golden sands and shallow waters. Check out the "
+                    "mythological murals in the portrait gallery of Mattancherry Palace, more familiarly "
+                    "known as the Dutch Palace, and watch rescued elephants being bathed, fed, and trained, "
+                    "or go on an elephant safari at Kodanad Elephant Training Centre.",
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(fontSize: 14),
+                  ),
+                  Text(
+                    "Visit the breathtaking 80-foot-high Athirapally Waterfalls, and then spend the afternoon "
+                    "on popular Cherai Beach with its golden sands and shallow waters. Check out the "
+                    "mythological murals in the portrait gallery of Mattancherry Palace, more familiarly "
+                    "known as the Dutch Palace, and watch rescued elephants being bathed, fed, and trained, "
+                    "or go on an elephant safari at Kodanad Elephant Training Centre.",
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(fontSize: 14),
+                  ),
+                  Text(
+                    "Visit the breathtaking 80-foot-high Athirapally Waterfalls, and then spend the afternoon "
+                        "on popular Cherai Beach with its golden sands and shallow waters. Check out the "
+                        "mythological murals in the portrait gallery of Mattancherry Palace, more familiarly "
+                        "known as the Dutch Palace, and watch rescued elephants being bathed, fed, and trained, "
+                        "or go on an elephant safari at Kodanad Elephant Training Centre.",
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(fontSize: 14),
+                  ),
+                ],
+              ),
             ),
           )
         ],
